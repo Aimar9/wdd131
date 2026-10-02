@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+    <meta name="description" content="Discover Argentina, its population, geography and current weather information">
+    <meta name="author" content="Denis Huallpa">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/argentina-small.webp">
+                <img src="images/argentina-medium.webp" alt="Landscape of Argentina" width="400" height="300">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong>2,780,400 km&sup2;</li>
+                <li><strong>Population:</strong>45,773,884</li>
+                <li><strong>Capital:</strong>Buenos Aires</li>
+                <li><strong>Languages:</strong>Spanish</li>
+                <li><strong>Currency:</strong>Argentine Peso</li>
+                <li><strong>Time Zone:</strong>UTC-3</li>
+                <li><strong>Calling Code:</strong> +54</li>
+                <li><strong>Internet TLD:</strong> .ar</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" alt="Partly Cloudy weather" src="images/weather.svg">
+
+            <ul>
+                <li><strong>Temperature:</strong> 8 °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 12 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

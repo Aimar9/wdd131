@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #75aadb;
+    --secondary-color: #ffffff;
+    --accent-color: #f6b40e;
+    --text-color: #222222;
+    --background-color: #f5f5f5;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.5;
+    background-color: var(--background-color);
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: #2e6fa8;
+    border-bottom: 8px solid var(--accent-color);
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main section {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border: 2px var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: #2e6fa8;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+li strong {
+    text-align: right;
+}
+
+.weather-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 0.75rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: #2e6fa8;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+@media (min-width: 700px) {
+    main {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .hero img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    main section {
+        position: absolute;
+        width: 200px;
+        margin: 0;
+        background-color: rgba(225, 225, 225, 0.85);
+    }
+
+    .data {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .weather {
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "🌥️";
+    }
+}
