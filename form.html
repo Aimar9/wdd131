@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Denis Huallpa</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Product review form by Denis Huallpa">
+    <meta name="author" content="Denis Huallpa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label for="star1">⭐<input type="radio" id="star1" name="rating" value="1" required></label>
+                <label for="star2">⭐⭐<input type="radio" id="star2" name="rating" value="2" required></label>
+                <label for="star3">⭐⭐⭐<input type="radio" id="star3" name="rating" value="3" required></label>
+                <label for="star4">⭐⭐⭐⭐<input type="radio" id="star4" name="rating" value="4" required></label>
+                <label for="star5">⭐⭐⭐⭐⭐<input type="radio" id="star5" name="rating" value="5" required></label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label for="durability"><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                <label for="easeOfUse"><input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">Ease Of Use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="features" value="design">Design</label>
+            </fieldset>
+
+            <label for="review"> Written Review</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label for="userName">User Name</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Denis Huallpa</p>
+        <p>Arequipa, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
