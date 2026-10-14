@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+:root {
+    --ink: #33415c;
+    --sky: #8EC9F2;
+    --mint: #BFE8CF;
+    --yellow: #FFEFB0;
+    --purple: #CDBFEF;
+    --blue: #A9BDF0;
+    --cream: #FBF5E9;
+    --white: #FFFFFF;
+    --border: #C9D3EA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--ink);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 12px;
+}
+
+h1 {font-size: 3rem;}
+h2 {font-size: 2.2rem;}
+h3 {font-size: 1.5rem;}
+
+p {margin: 0 0 12px;}
+
+a {color: inherit; }
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border-radius: 20px;
+    background-color: var(--purple);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 16px;
+    padding: 10px 24px;
+    background: var(--mint);
+    border-bottom: 2px solid var(--white);
+}
+
+.logo {
+    font-family: "Gloock", serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.header nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-left: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 24px;
+}
+
+.header nav a:hover {
+    background: var(--white);
+}
+
+.welcome {
+    padding: 28px 24px;
+    text-align: center;
+    background: var(--purple);
+}
+
+.welcome p {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 56px 24px;
+    background: var(--sky);
+}
+
+.hero div {
+    max-width: 480px;
+}
+
+.hero img {
+    margin: 0;
+    max-width: 260px;
+    height: 380px;
+}
+
+.btn, button {
+    display: inline-block;
+    padding: 12px 26px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ink);
+    background: var(--yellow);
+    border: 2px solid var(--border);
+    border-radius: 28px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover {
+    background: var(--white);
+}
+
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1 1 260px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 24px;
+}
+
+a.card:hover {
+  background: var(--yellow);
+}
+
+.price {
+  font-weight: 800;
+}
+
+.stars {
+  color: #F2C14E;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.post {
+  max-width: 760px;
+}
+
+.post h3 {
+  margin-top: 28px;
+}
+
+.find-us {
+  max-width: none;
+  padding-inline: max(24px, calc(50% - 526px));
+  background: var(--mint);
+}
+
+.quiz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.quiz button.selected {
+  background: var(--sky);
+}
+
+#result {
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 10px 18px;
+  font-weight: 700;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 560px;
+  margin-left: auto;
+  padding: 28px;
+  background: var(--yellow);
+  border: 2px solid var(--border);
+  border-radius: 24px;
+}
+
+label {
+  margin-top: 8px;
+  font-weight: 800;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+}
+
+form .btn {
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+#confirmation {
+  margin-top: 12px;
+  font-weight: 800;
+}
+
+.footer {
+  padding: 48px 24px 24px;
+  text-align: center;
+  background: var(--sky);
+}
+
+.footer h2 {
+  font-size: 2.4rem;
+}
+
+.socialmedia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.socialmedia img {
+  width: 40px;
+  height: 40px;
+  max-width: none;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 20;
+  padding: 14px 22px;
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--yellow);
+  border: 2px solid var(--border);
+  border-radius: 32px;
+  box-shadow: 0 8px 20px rgba(51, 65, 92, 0.18);
+}
+
+#booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#booking h2 {
+  grid-column:  1 / -1;
+}
+
+#booking .text img {
+  width: 100%;
+  max-width: 90%;
+  height: 100%;
+}
+
+#booking form {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  .hero { padding: 36px 24px; }
+
+  #booking {
+    grid-template-columns: 1fr;
+  }
+
+  #booking .text img {
+    height: 300px;
+  }
+}
+
+#find-us {
+  position: relative;
+}
+
+#find-us iframe {
+  width: 40%;
+  height: 220px;
+  float: right;
+  margin-top: -190px;
+  border-radius: 15px;
+}

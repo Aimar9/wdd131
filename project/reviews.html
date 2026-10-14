@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="siteplan.html">Siteplan Frappe</a>
+        <nav>
+            <a href="siteplan.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h1>Reviews and booking</h1>
+            <p>See what people who've been here think, and book a table for your own visit.</p>
+        </section>
+        <section class="section" id="reviews">
+            <h2>What our customers say</h2>
+            <p>Sample reviews: replace them wih real ones from your customers.</p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Camila Quispe</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>The pearls are so soft and the taro isn't too sweet. I've already been three times with my friends.</p>
+                    <small>Taro with boba</small>
+                </article>
+                <article class="card">
+                    <h3>Diego Mamani</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>Creamy and really cold. The large size is huge and the service was fast.</p>
+                    <small>Classic taro</small>
+                </article>
+                <article class="card">
+                    <h3>Valeria Flores</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>The mix surprised me, taro and strawberry really works. I'd just make it a little less sweet.</p>
+                    <small>Taro and strawberry</small>
+                </article>
+                <article class="card">
+                    <h3>Jorge Calsin</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>So refreshing for the afternoon. The coconut tastes natural.</p>
+                    <small>Taro with coconut</small>
+                </article>
+                <article class="card">
+                    <h3>Lucia Paredes</h3>
+                    <p class="stars">★★★★☆</p>
+                    <p>Different and really good. I liked the place too, neat and with nice music.</p>
+                    <small>Taro and matcha</small>
+                </article>
+                <article class="card">
+                    <h3>Mateo Rivera</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>I booked a table for my sister's birthday and everything went perfectly.</p>
+                    <small>Taro with vainilla</small>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="booking">
+            <h2>Book your table</h2>
+            <div class="text">
+                <img src="images/frappe table.jpg" alt="Frappe"">
+            </div>
+            <form action="booking-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+
+                <label for="people">How many people?</label>
+                <select id="people">
+                    <option>1 person</option>
+                    <option>2 people</option>
+                    <option>3 to 4 people</option>
+                    <option>5 to 8 people</option>
+                    <option>More then 8</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" id="time" required>
+
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" rows="3"></textarea>
+
+                <button class="btn" type="submit">Send booking</button>
+                <p id="confirmation"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>Siteplan Frappes</h2>
+        <p>Taro frappes, smooth and different.</p>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.jpg" alt="Facebook"
+                  width="50"></a>
+            <a href="https://www.whatsapp.com/?lang=es"><img src="images/whatsapp.jpg" alt="Whatsapp"
+                  width="50"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.jpg" alt="Instagram"
+                  width="50"></a>
+        </div>
+        <p>© 2026 Siteplan Frappes - Website by Denis Huallpa</p>
+    </footer>
+</body>
+</html>
