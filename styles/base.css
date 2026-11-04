@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #222831;
     background-color: #ffffff;
     line-height: 1.5;
@@ -20,7 +20,7 @@ header {
 #course-title {
     display: block;
     padding: 1.1rem 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -54,7 +54,7 @@ main {
 
 main h1 {
     grid-column: 1 / -1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1.9rem;
     margin-bottom: 0.5rem;
@@ -76,7 +76,7 @@ main h1 {
     grid-row: 1;
     background-color: #1b3a57;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
     text-align: center;
     padding: 0.8rem;
@@ -103,7 +103,7 @@ main h1 {
 .card h3 {
     grid-column: 1 / -1;
     grid-row: 3;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 1rem;
@@ -137,7 +137,8 @@ main h1 {
 }
 
 .card ul a:hover {
-    color: #ffd369;
+    color: #7a4b00;
+    text-decoration: none;
 }
 
 footer {
