@@ -11,7 +11,7 @@ menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
 
     if (nav.classList.contains('open')) {
-        menuButton.textContent = '❌';
+        menuButton.textContent = 'X';
     } else {
         menuButton.textContent = '≡';
     }
